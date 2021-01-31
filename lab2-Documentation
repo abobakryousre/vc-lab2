@@ -1,0 +1,10 @@
+to remove the local change: git resest -- hard [old stable commit id] or git reset -- hard HEAD~1 [to delete last commit]
+and to remove remote changes: git revert HEAD
+to list all tags : git tag
+to delete an old tage locally: git tag -d "tagename", OR git tag —delete "tagename"
+to delete an old tag remotly: git push --delete origin tagname
+rebase command: this command like git merge and used with feature branch workflow to keep the development history clean. example:
+i am working on new feature and there is a new update commits in master branch, if i merge the master with my new feature branch the log will not have my commit history.
+so will use the rebse command to switch my base commit to the last updated commit in the branch and then if i merged here my history will not lost
+
+
